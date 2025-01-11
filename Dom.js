@@ -1,4 +1,5 @@
 // let para = document.querySelectorAll("p");
+// let para = document.querySelectorAll("p");
 
 // para.forEach((element) => {
 //   console.log(element.innerText);
