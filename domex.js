@@ -17,9 +17,15 @@
 // data.style.fontSize = "60px";
 // data.style.margin = "";
 
-const contents = document.querySelector('p')
+// const contents = document.querySelector('p')
 
-console.log(contents.classList);
-contents.classList.add('error');
-contents.classList.remove('error');
-contents.classList.add("success");
+// console.log(contents.classList);
+// contents.classList.add('error');
+// contents.classList.remove('error');
+// contents.classList.add("success");
+
+let pTag = document.querySelectorAll("p");
+pTag.forEach((pTags) => {
+  if (pTag.incl) {
+  }
+});
