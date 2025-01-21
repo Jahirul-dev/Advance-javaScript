@@ -1,6 +1,27 @@
 //js
-let li = document.querySelectorAll('li')
+// let liTag = document.querySelectorAll('li')
 
-li.forEach(() => {
-    li.addEventListener('click', () => { }
+// // liTag.forEach(eachLi =>{
+// //     eachLi.addEventListener('click', (e) =>{
+// //         console.log(e.target);
+
+// //         e.target.style.textDecoration = 'line-through'
+        
+// //     })
+// // })
+
+//remove
+let liTag01 = document.querySelectorAll('li');
+
+liTag01.forEach(eachLi01 =>{
+    eachLi01.addEventListener('click', ()=>{
+        eachLi01.remove();
+    })
 })
+
+//add
+let getDiv = document.querySelector('div');
+let addButton = document.querySelector('button')
+addButton.addEventListener('click', (e)=>{
+        getDiv.innerHTML += '<li>Data added</li>'
+    })
