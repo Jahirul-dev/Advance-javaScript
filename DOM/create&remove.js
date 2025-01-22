@@ -32,4 +32,11 @@ btn.addEventListener("click", () => {
   addLi.textContent = "Data added dwd";
   //getDiv.append(addLi);
   getDiv.prepend(addLi);
+  console.log(getDiv.textContent);
+});
+
+getDiv.addEventListener("click", (e) => {
+  if (e.target.tagName === "LI") {
+    e.target.remove();
+  }
 });
