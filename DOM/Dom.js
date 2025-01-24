@@ -27,3 +27,13 @@ let getattr = document.querySelector("a");
 console.log(getattr.getAttribute("id"));
 getattr.setAttribute("id", "success");
 getattr.setAttribute("style", "color:red");
+
+//Copy
+let copy = document.querySelector(".copy");
+copy.addEventListener("copy", () => {
+  console.log("some one copied the text");
+});
+
+copy.addEventListener("click", () => {
+  console.log("just clicked");
+});
