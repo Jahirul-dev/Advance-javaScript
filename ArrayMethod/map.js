@@ -18,6 +18,13 @@ const products = [
 
 const saleProducts = products.map((deductVal =>{
     
+    // if (deductVal.priceVal > 50){
+    //     return deductVal.priceVal = deductVal.priceVal/3
+    // }
+    // else
+    // return deductVal;
+
+
     if (deductVal.priceVal > 50){
         return {name:deductVal.name, priceVal:deductVal.priceVal/2}
     }
