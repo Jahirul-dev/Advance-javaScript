@@ -12,10 +12,11 @@
 // });
 // console.log(arrayReturn);
 
-let arrayForReduce = [12, 43, 23, 32, 43, 32];
+let arrayForReduce = [175, 50, 25];
 
-let asd = arrayForReduce.reduce(getfunc);
-console.log(asd);
+let asd = arrayForReduce.reduce(getfunc, 0);
+
 function getfunc(acc, currVal) {
-  return acc - currVal;
+  return acc++;
 }
+console.log(asd);
