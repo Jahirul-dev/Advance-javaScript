@@ -12,11 +12,29 @@
 // });
 // console.log(arrayReturn);
 
-let arrayForReduce = [175, 50, 25];
+// let arrayForReduce = [175, 50, 25];
 
-let asd = arrayForReduce.reduce(getfunc, 0);
+// let asd = arrayForReduce.reduce(getfunc, 0);
+// function getfunc(acc, currVal) {
+//   return acc++;
+// }
+// console.log(asd);
 
-function getfunc(acc, currVal) {
-  return acc++;
-}
-console.log(asd);
+const datas = [
+  { name: "shan", age: 34 },
+  { name: "mario", age: 65 },
+  { name: "shan", age: 43 },
+  { name: "Jayer", age: 43 },
+  { name: "shan", age: 43 },
+  { name: "mario", age: 45 },
+  { name: "Jayer", age: 43 },
+];
+
+let sortDatas = datas.reduce((acc, curr) => {
+  if (curr.name === "shan") {
+    acc = acc + curr.age;
+  }
+  return acc;
+}, 0);
+
+console.log(sortDatas);
