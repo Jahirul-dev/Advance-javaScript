@@ -12,15 +12,19 @@ let changeObj = [
     {name: 'Silver', price: 320}
 ]
 
-let filterVal = changeObj.filter((val)=>{
+// let filterVal = changeObj.filter((val)=>{
   
-        // if (val.price> 1000){
-        //     return {name: val.name, price: val.price}
-        // }  
-        return val.price > 2000
-})
+//         // if (val.price> 1000){
+//         //     return {name: val.name, price: val.price}
+//         // }  
+//         return val.price > 2000
+// })
 
-let mapOnFilter = filterVal.map((mapVal)=>{
-    return `${mapVal.name} prices in ${mapVal.price/2}`
-})
-console.log(mapOnFilter);
+// let mapOnFilter = filterVal.map((mapVal)=>{
+//     return `${mapVal.name} prices in ${mapVal.price/2}`
+// })
+// console.log(mapOnFilter);
+let filterVal = changeObj
+.filter((val)=> val.price > 2000)
+.map((mapVal)=> `${mapVal.name} prices in ${mapVal.price/2}`)
+console.log(filterVal);
