@@ -6,34 +6,45 @@
 //   element.innerText += ". Data has added already!!";
 // });
 
-let Datas = document.querySelector(".content");
+// let Datas = document.querySelector(".content");
 
-let dataArray = ["Mario", "Tanisha", "Emmar", "John"];
-// console.log(Datas.innerText);
-// // console.log(Datas.innerHTML);
-// Datas.innerText = " Data updated";
-// Datas.innerHTML = "<h2>Datas html has been updated</h2>;";
+// let dataArray = ["Mario", "Tanisha", "Emmar", "John"];
+// // console.log(Datas.innerText);
+// // // console.log(Datas.innerHTML);
+// // Datas.innerText = " Data updated";
+// // Datas.innerHTML = "<h2>Datas html has been updated</h2>;";
 
-dataArray.forEach((person) => {
-  //console.log(person);
-  Datas.innerHTML += `<p>${person}</p>`;
-});
+// dataArray.forEach((person) => {
+//   //console.log(person);
+//   Datas.innerHTML += `<p>${person}</p>`;
+// });
 
-let link = document.querySelector("a");
-// console.log(link);
-// console.log(link.getAttribute("href"));
+// let link = document.querySelector("a");
+// // console.log(link);
+// // console.log(link.getAttribute("href"));
 
-let getattr = document.querySelector("a");
-console.log(getattr.getAttribute("id"));
-getattr.setAttribute("id", "success");
-getattr.setAttribute("style", "color:red");
+// let getattr = document.querySelector("a");
+// console.log(getattr.getAttribute("id"));
+// getattr.setAttribute("id", "success");
+// getattr.setAttribute("style", "color:red");
 
-//Copy
-let copy = document.querySelector(".copy");
-copy.addEventListener("copy", () => {
-  console.log("some one copied the text");
-});
+// //Copy
+// let copy = document.querySelector(".copy");
+// copy.addEventListener("copy", () => {
+//   console.log("some one copied the text");
+// });
 
-copy.addEventListener("click", () => {
-  console.log("just clicked");
-});
+// copy.addEventListener("click", () => {
+//   console.log("just clicked");
+// });
+
+// document.getElementById('')
+// document.getElementsByTagName("")
+// document.getElementsByClassName("")
+// document.querySelector('')
+// document.querySelectorAll('')
+
+let getSection = document.querySelector("section")
+// console.log(getSection);
+getSection.classList.remove('section')
+getSection.classList.add('orsection')
